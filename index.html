@@ -16,11 +16,17 @@
       margin-bottom: 50px;
       margin-left: 50px;
       margin-right: 50px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     h1 {
+      position: relative;
       color: rgba(72, 150, 10, 0.7);
     }
     h2 {
+      position: static;
+      color: blue;
+    }
+    button:hover {
       color: blue;
     }
     h3 {
@@ -30,7 +36,34 @@
       color: orange;
       font-size: 0.45cm;
     }
+    a[href="https://www.google.com"]
+    {
+      color: green;
+    }
+    button:hover {
+      color: blue;
+    }
+    li {
+      list-style-type: disc;
+    }
+    
 
+    li li {
+      list-style-type: circle;
+    }
+    p ~ span {
+      color: red;
+    }
+    p + span {
+      color: red;
+    }
+    span {
+      background-color: aqua;
+    }
+
+    div > span {
+      background-color: yellow;
+    }
     details {
       color: red;
       font-size: 1.2em;
@@ -45,9 +78,32 @@
       margin: 30px;
     }
 
-    div {
+    .class1 {
       color: rgb(96, 79, 79)
 
+    }
+    #lname {
+  border: red 2px solid;
+    }
+    .container {
+      display: flex; /* or inline-flex */
+      flex-direction: row ;
+      flex-wrap: nowrap;
+    }
+    .item {
+      order: 5; /* default is 0 */
+    }
+    .item {
+      order: 6; /* default is 0 */
+    }
+    .item {
+      order: 7; /* default is 0 */
+    }
+    .container {
+      display: grid | inline-grid;
+    }
+    @media screen, print {
+    /* … */
     }
 
     section,
@@ -81,7 +137,7 @@
       <div>
         Each attendee would introduce themselves.
       </div>
-      <div>
+      <div class="class1">
         <p>
           We just decided on when to meet from the last meeting.
           
@@ -99,7 +155,7 @@
         <li>Where are you from?</li>
       </ul>
       <p>
-        If you want to search, use
+        <span> you want to search, use</span>
         <a href="https://www.google.com"><b>google</b></a>
       </p>
       <details>
