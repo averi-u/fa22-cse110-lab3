@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Introduction</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+  </head>
+  <body>
+    <header>
+      <h1>Introduction</h1>
+      <h2>Icebreaker</h2>
+      <h3>Date: Tuesday Oct 1 2022</h3>
+      <hr />
+    </header>
+    
+    <main>
+      <div><b>Attendance List</b></div>
+      <ol>
+        <li><i>Jane</i></li>
+        <li><i>Luke</i></li>
+        <li><em>Mark</em></li>
+      </ol>
+
+      <nav>
+        <a href="http://www.google.com">Google</a>
+      </nav>
+
+      <div><strong>Agenda</strong></div>
+      <div>
+        Each attendee would introduce themselves.
+      </div>
+      <div>
+        <p>
+          We just decided on when to meet from the last meeting.
+          
+        </p>
+        <ul>
+          <li><span>We need to introduce everyone.</span></li>
+
+        </ul>
+      </div>
+      <section>
+        <h3>Things that are new business that need to be talked about</h3>
+      </section>
+      <ul>
+        <li>What are your name?</li>
+        <li>Where are you from?</li>
+      </ul>
+      <p>
+        If you want to search, use
+        <a href="https://www.google.com"><b>google</b></a>
+      </p>
+      <details>
+        <summary>
+          Any miscellaneous comments
+        </summary>
+        <p>
+          Alex said that he wouldn't come to our meeting today.
+        </p>
+      </details>
+    </main>
+    <footer>
+      <img src="image.png" alt="Comp. goal" width="700" height="300" />
+      <br />
+      <audio controls>
+        <source src="audio.mp3" type="audio/mpeg" />
+      </audio>
+      <br />
+      <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4" />
+      </video>
+
+      <h1>Forms</h1>
+      <form action="/action_page.php">
+        <fieldset>
+          <legend>Personalia:</legend>
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" /><br /><br />
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" /><br /><br />
+          <input type="email" id="email" name="email" /><br /><br />
+          <label for="location">Where are from:</label>
+          <input list="locations" name="location" id="location" />
+          <datalist id="locations">
+            <option value="San Francisco"></option>
+            <option value="Chicago"></option>
+            <option value="Boston"></option>
+            <option value="Florida"></option>
+            <option value="Other states"></option>
+          </datalist>
+          <br />
+          <label for="hobby">What's your favorite hobby:</label>
+          <select name="hobby" id="hobby">
+            <option value="badminton">Badminton</option>
+            <option value="basketball">basketball</option>
+          </select>
+          <br />
+          <textarea id="contents" name="contents" rows="3" cols="40"></textarea>
+          <br />
+          <input type="submit" value="Submit" />
+          <button type="button" onclick="alert('Hello')">ClickMe</button>
+        </fieldset>
+      </form>
+    </footer>
+  </body>
+</html>
